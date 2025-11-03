@@ -29,7 +29,9 @@ class Master {
 
 
 int main() {
-        
+    mutex mtx;              //serve per sincronizzare thread e permette di proteggere sezioni critiche, che sono luoghi in cui possono avvenire 2 operazioni nello stesso momento dando problemi
+    queue<Task> coda; //sto creando la coda per le task
+    condition_variable cv;
     
 
 	return 0;
